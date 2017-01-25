@@ -1,0 +1,27 @@
+{
+  "name": "tree-js",
+  "version": "1.0.0",
+  "description": "Building on data structures and algorithms",
+  "main": "index.js",
+  "scripts": {
+    "test": "DEBUG='algs*' mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geoffsimons/tree-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geoffsimons/tree-js/issues"
+  },
+  "homepage": "https://github.com/geoffsimons/tree-js#readme",
+  "dependencies": {
+    "debug": "^2.6.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
