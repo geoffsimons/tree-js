@@ -17,7 +17,7 @@ describe('Tree', function() {
     it('should print in level order', () => {
       let result = this.tree.print();
       debug(result);
-      expect(result).to.equal('A B C D ');
+      expect(result).to.equal('A\nBC\nD');
     });
   });
 });

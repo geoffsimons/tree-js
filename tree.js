@@ -10,14 +10,20 @@ function Tree(val, children) {
 
 Tree.prototype.print = function() {
   let output = '';
+  let curLevel = 0;
   let q = new Queue();
-  q.enqueue(this);
+  q.enqueue({ node: this, level: 0 });
   while(q.size() > 0) {
-    let node = q.dequeue();
+    let item = q.dequeue();
+    let node = item.node;
     node.children.forEach( child => {
-      q.enqueue(child);
+      q.enqueue({ node: child, level: item.level + 1 });
     });
-    output += node.val + ' ';
+    if(item.level > curLevel) {
+      curLevel = item.level;
+      output += '\n';
+    }
+    output += node.val;
   }
   return output;
 };
