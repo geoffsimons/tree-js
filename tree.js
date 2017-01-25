@@ -22,11 +22,4 @@ Tree.prototype.print = function() {
   return output;
 };
 
-Tree.prototype.add = function(tree) {
-  if( !(tree instanceof Tree) ) {
-    throw new Error('can only add instances of Tree');
-  }
-  this.children.push(tree);
-};
-
 module.exports = Tree;
